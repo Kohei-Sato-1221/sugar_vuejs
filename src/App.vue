@@ -1,38 +1,11 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h1 v-text="msg"></h1>
-    <p v-html="htmlMsg"></p>
-    <p v-text="htmlMsg"></p>
-    <br/>
-    <div>{{ 'current age is ' + age}} </div>
-    <div>{{ 'in 10 years,  it\'ll be ' + (age + 10)}} </div>
-    <div>{{ favoriteFoods }} </div>
-    <br/>
-    <div class="data">{{ $data }}</div>
-    <ul id="example-1">
-      <li v-for="(item, key) in $data" :key='key'>
-        {{ item }} : {{ key}}
-      </li>
-    </ul>
+  <div id="nav">
+    <router-link to="/">Home</router-link> |
+    <router-link to="/basic">Basic</router-link> | 
+    <router-link to="/form">Form</router-link>
   </div>
+  <router-view />
 </template>
-
-<script lang="ts">
-const favoriteFoods: string[] = ['ramen', 'sushi', 'spagetti']
-
-export default {
-  name: 'hello',
-  data () {
-    return {
-      msg: 'This is sugar project!!!',
-      htmlMsg: '<h2>html message!</h2>',
-      age: 33,
-      favoriteFoods: favoriteFoods
-    }
-  }
-}
-</script>
 
 
 <style>
@@ -55,5 +28,9 @@ export default {
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.my-class {
+  background-color: #42b983;
 }
 </style>
