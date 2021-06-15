@@ -10,6 +10,7 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "noImplicitThis": false,
     "sourceMap": true,
     "baseUrl": ".",
     "types": [
@@ -37,5 +38,5 @@
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
 }
