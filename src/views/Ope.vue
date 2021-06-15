@@ -1,12 +1,21 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/basic">Basic</router-link> | 
-    <router-link to="/form">Form</router-link> | 
-    <router-link to="/ope">Ope</router-link>
+  <div class="hello">
+    <h1>{{ msg }}</h1>
   </div>
-  <router-view />
 </template>
+
+<script lang="ts">
+const favoriteFoods: string[] = ['ramen', 'sushi', 'spagetti']
+
+export default {
+  name: 'hello',
+  data () {
+    return {
+      msg: 'Ope page',
+    }
+  }
+}
+</script>
 
 
 <style>
