@@ -3,6 +3,8 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/basic">Basic</router-link> | 
     <router-link to="/form">Form</router-link> | 
+    <router-link to="/Css">CSS</router-link> | 
+    <router-link to="/component">Component</router-link> | 
     <router-link to="/ope">Ope</router-link>
   </div>
   <router-view />
